@@ -6,6 +6,7 @@ package mx.itson.carrito.ui;
 
 import java.util.Scanner;
 import mx.itson.carrito.entidades.Carro;
+import mx.itson.carrito.enums.TipoMotor;
 
 /**
  *
@@ -28,10 +29,12 @@ public class Main {
         enclave.setColor("negro");
         enclave.setYear(2008);
         enclave.setKilometraje(357000);
+        enclave.setTipoMotor(TipoMotor.COMBUSTION);
         
         float tiempo = enclave.determinarTiempo(distancia, velocidad);
         System.out.println("El tiempo que tomara el " + enclave.getMarca() + " del año " + enclave.getYear() + " de color " + enclave.getColor() + ", para llegar es " + tiempo + " horas" );
         enclave.setKilometraje(enclave.getKilometraje() + distancia);
         System.out.println("El nuevo kilometraje es " + enclave.getKilometraje());
+        System.out.println("El tipo de motor es: " + enclave.getTipoMotor());
     }
 }

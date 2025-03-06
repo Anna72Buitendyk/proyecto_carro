@@ -4,6 +4,8 @@
  */
 package mx.itson.carrito.entidades;
 
+import mx.itson.carrito.enums.TipoMotor;
+
 /**
  *
  * @author alumnog
@@ -65,11 +67,26 @@ public class Carro {
     public void setKilometraje(float kilometraje) {
         this.kilometraje = kilometraje;
     }
+    
+    /**
+     * @param tipoMotor the kilometraje to set
+     */
+    public void setTipoMotor(TipoMotor tipoMotor) {
+        this.tipoMotor = tipoMotor;
+    }
+    
+    /**
+     * @param tipoMotor the kilometraje to set
+     */
+    public TipoMotor getTipoMotor() {
+        return this.tipoMotor;
+    }
 
     private String color;
     private int year;
     private String marca;
     private float kilometraje;
+    private TipoMotor tipoMotor;
 
     
     /**
