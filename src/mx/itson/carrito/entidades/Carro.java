@@ -76,10 +76,20 @@ public class Carro {
     }
     
     /**
-     * @param tipoMotor the kilometraje to set
+     *
+     * @return  Retorna tipoMotor
      */
     public TipoMotor getTipoMotor() {
         return this.tipoMotor;
+    }
+    
+    
+    public Propietario getPropietario() {
+        return propietario;
+    }
+
+    public void setPropietario(Propietario propiatario) {
+        this.propietario = propiatario;
     }
 
     private String color;
@@ -87,6 +97,7 @@ public class Carro {
     private String marca;
     private float kilometraje;
     private TipoMotor tipoMotor;
+    private Propietario propietario;
 
     
     /**
@@ -99,4 +110,5 @@ public class Carro {
         float tiempo = distancia/velocidad;
         return tiempo;
     }
+
 }
