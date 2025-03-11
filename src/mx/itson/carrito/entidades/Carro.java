@@ -91,6 +91,16 @@ public class Carro {
     public void setPropietario(Propietario propiatario) {
         this.propietario = propiatario;
     }
+    
+        public Seguro getSeguro() {
+        return seguro;
+    }
+
+    public void setSeguro(Seguro seguro) {
+        this.seguro = seguro;
+    }
+
+    
 
     private String color;
     private int year;
@@ -98,8 +108,9 @@ public class Carro {
     private float kilometraje;
     private TipoMotor tipoMotor;
     private Propietario propietario;
+    private Seguro seguro;
 
-    
+
     /**
      * Calcula cuanto tiempo va tomar viajar n kilometros a m km/hr
      * @param distancia Distancia que ha viajado el carro
